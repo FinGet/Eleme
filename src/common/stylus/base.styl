@@ -1,0 +1,32 @@
+/*
+ * @Author: Mario 
+ * @Date: 2017-07-27 12:39:47 
+ * @Last Modified by: Mario
+ * @Last Modified time: 2017-07-27 13:52:10
+ */
+ body, html
+  line-height: 1
+  font-weight: 200
+  font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif
+
+.clearfix
+  display: inline-block
+  &:after
+    display: block
+    content: "."
+    height: 0
+    line-height: 0
+    clear: both
+    visibility: hidden
+
+@media (-webkit-min-device-pixel-ratio:1.5),(min-device-pixel-ratio:1.5)
+    .border-1px
+        &::after
+            -webkit-transform: scaleY(0.7)
+            transform: scaleY(0.7)
+
+@media (-webkit-min-device-pixel-ratio:2),(min-device-pixel-ratio:2)
+    .border-1px
+        &::after
+            -webkit-transform: scaleY(0.5)
+            transform: scaleY(0.5)
